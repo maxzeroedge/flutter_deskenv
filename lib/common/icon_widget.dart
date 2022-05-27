@@ -1,4 +1,4 @@
-import 'package:deskenv/model/desktop_wallpaper_bg.dart';
+import 'package:deskenv/model/desktop/desktop_wallpaper_bg.dart';
 import 'package:deskenv/model/icon_model.dart';
 import 'package:flutter/material.dart';
 

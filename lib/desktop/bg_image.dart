@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:deskenv/model/desktop_wallpaper_bg.dart';
+import 'package:deskenv/model/desktop/desktop_wallpaper_bg.dart';
 import 'package:flutter/material.dart';
 
 class BgImageWidget extends StatelessWidget {

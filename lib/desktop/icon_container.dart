@@ -1,5 +1,5 @@
 import 'package:deskenv/common/icon_widget.dart';
-import 'package:deskenv/model/desktop_settings.dart';
+import 'package:deskenv/model/desktop/desktop_settings.dart';
 import 'package:deskenv/model/icon_model.dart';
 import 'package:flutter/material.dart';
 

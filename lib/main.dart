@@ -37,7 +37,10 @@ class DeskEnvApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: BaseWidget(UniqueKey(), childWidget: const Desktop()),
+      home: const BaseWidget(
+        childWidget: Desktop(),
+        fullScreen: true,
+      ),
     );
   }
 }

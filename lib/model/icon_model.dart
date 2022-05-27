@@ -1,4 +1,4 @@
-import 'package:deskenv/model/desktop_wallpaper_bg.dart';
+import 'package:deskenv/model/desktop/desktop_wallpaper_bg.dart';
 import 'package:flutter/foundation.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 

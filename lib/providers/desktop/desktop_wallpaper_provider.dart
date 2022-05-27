@@ -1,4 +1,4 @@
-import 'package:deskenv/model/desktop_wallpaper_bg.dart';
+import 'package:deskenv/model/desktop/desktop_wallpaper_bg.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart'; 
 
 
