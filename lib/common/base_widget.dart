@@ -20,7 +20,7 @@ class BaseWidget extends StatelessWidget {
       return childWidget;
     }
     return Scaffold(
-      appBar: !fullScreen ? null : 
+      appBar: fullScreen ? null : 
         AppBar(
           actions: [
             IconButton(
