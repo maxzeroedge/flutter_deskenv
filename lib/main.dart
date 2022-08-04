@@ -11,7 +11,7 @@ void main() async {
   // Must add this line.
   await windowManager.ensureInitialized();
 
-  WindowOptions windowOptions = WindowOptions(
+  WindowOptions windowOptions = const WindowOptions(
     fullScreen: true,
     center: true,
     backgroundColor: Colors.transparent,
