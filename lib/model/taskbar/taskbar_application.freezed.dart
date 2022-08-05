@@ -22,6 +22,8 @@ TaskbarApplication _$TaskbarApplicationFromJson(Map<String, dynamic> json) {
 mixin _$TaskbarApplication {
   String get name => throw _privateConstructorUsedError;
   set name(String value) => throw _privateConstructorUsedError;
+  String get processName => throw _privateConstructorUsedError;
+  set processName(String value) => throw _privateConstructorUsedError;
   WallpaperType get imageType => throw _privateConstructorUsedError;
   set imageType(WallpaperType value) => throw _privateConstructorUsedError;
   String get icon => throw _privateConstructorUsedError;
@@ -44,6 +46,7 @@ abstract class $TaskbarApplicationCopyWith<$Res> {
       _$TaskbarApplicationCopyWithImpl<$Res>;
   $Res call(
       {String name,
+      String processName,
       WallpaperType imageType,
       String icon,
       TaskbarApplicationSizeState applicationSizeState});
@@ -63,6 +66,7 @@ class _$TaskbarApplicationCopyWithImpl<$Res>
   @override
   $Res call({
     Object? name = freezed,
+    Object? processName = freezed,
     Object? imageType = freezed,
     Object? icon = freezed,
     Object? applicationSizeState = freezed,
@@ -71,6 +75,10 @@ class _$TaskbarApplicationCopyWithImpl<$Res>
       name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      processName: processName == freezed
+          ? _value.processName
+          : processName // ignore: cast_nullable_to_non_nullable
               as String,
       imageType: imageType == freezed
           ? _value.imageType
@@ -105,6 +113,7 @@ abstract class _$$_TaskbarApplicationCopyWith<$Res>
   @override
   $Res call(
       {String name,
+      String processName,
       WallpaperType imageType,
       String icon,
       TaskbarApplicationSizeState applicationSizeState});
@@ -127,6 +136,7 @@ class __$$_TaskbarApplicationCopyWithImpl<$Res>
   @override
   $Res call({
     Object? name = freezed,
+    Object? processName = freezed,
     Object? imageType = freezed,
     Object? icon = freezed,
     Object? applicationSizeState = freezed,
@@ -135,6 +145,10 @@ class __$$_TaskbarApplicationCopyWithImpl<$Res>
       name: name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      processName: processName == freezed
+          ? _value.processName
+          : processName // ignore: cast_nullable_to_non_nullable
               as String,
       imageType: imageType == freezed
           ? _value.imageType
@@ -159,6 +173,7 @@ class _$_TaskbarApplication
     implements _TaskbarApplication {
   _$_TaskbarApplication(
       {required this.name,
+      required this.processName,
       this.imageType = WallpaperType.FILE_PATH,
       this.icon = "assets/images/icon_default.jpg",
       required this.applicationSizeState});
@@ -168,6 +183,8 @@ class _$_TaskbarApplication
 
   @override
   String name;
+  @override
+  String processName;
   @override
   @JsonKey()
   WallpaperType imageType;
@@ -179,7 +196,7 @@ class _$_TaskbarApplication
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'TaskbarApplication(name: $name, imageType: $imageType, icon: $icon, applicationSizeState: $applicationSizeState)';
+    return 'TaskbarApplication(name: $name, processName: $processName, imageType: $imageType, icon: $icon, applicationSizeState: $applicationSizeState)';
   }
 
   @override
@@ -188,6 +205,7 @@ class _$_TaskbarApplication
     properties
       ..add(DiagnosticsProperty('type', 'TaskbarApplication'))
       ..add(DiagnosticsProperty('name', name))
+      ..add(DiagnosticsProperty('processName', processName))
       ..add(DiagnosticsProperty('imageType', imageType))
       ..add(DiagnosticsProperty('icon', icon))
       ..add(DiagnosticsProperty('applicationSizeState', applicationSizeState));
@@ -208,6 +226,7 @@ class _$_TaskbarApplication
 abstract class _TaskbarApplication implements TaskbarApplication {
   factory _TaskbarApplication(
           {required String name,
+          required String processName,
           WallpaperType imageType,
           String icon,
           required TaskbarApplicationSizeState applicationSizeState}) =
@@ -218,6 +237,8 @@ abstract class _TaskbarApplication implements TaskbarApplication {
 
   @override
   String get name => throw _privateConstructorUsedError;
+  @override
+  String get processName => throw _privateConstructorUsedError;
   @override
   WallpaperType get imageType => throw _privateConstructorUsedError;
   @override

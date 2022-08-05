@@ -10,6 +10,7 @@ part 'taskbar_application.g.dart';
 class TaskbarApplication with _$TaskbarApplication {
   factory TaskbarApplication({
     required String name,
+    required String processName,
     @Default(WallpaperType.FILE_PATH) WallpaperType imageType,
     @Default("assets/images/icon_default.jpg") String icon,
     required TaskbarApplicationSizeState applicationSizeState

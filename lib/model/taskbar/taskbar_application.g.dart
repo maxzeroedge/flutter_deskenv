@@ -10,6 +10,7 @@ _$_TaskbarApplication _$$_TaskbarApplicationFromJson(
         Map<String, dynamic> json) =>
     _$_TaskbarApplication(
       name: json['name'] as String,
+      processName: json['processName'] as String,
       imageType:
           $enumDecodeNullable(_$WallpaperTypeEnumMap, json['imageType']) ??
               WallpaperType.FILE_PATH,
@@ -22,6 +23,7 @@ Map<String, dynamic> _$$_TaskbarApplicationToJson(
         _$_TaskbarApplication instance) =>
     <String, dynamic>{
       'name': instance.name,
+      'processName': instance.processName,
       'imageType': _$WallpaperTypeEnumMap[instance.imageType],
       'icon': instance.icon,
       'applicationSizeState': instance.applicationSizeState,
